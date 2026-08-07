@@ -1,7 +1,8 @@
 export function formatDuration(totalSeconds: number): string {
-  const hours = Math.floor(totalSeconds / 3600);
-  const minutes = Math.floor((totalSeconds % 3600) / 60);
-  const seconds = totalSeconds % 60;
+  const safeTotal = Math.max(0, Math.floor(totalSeconds));
+  const hours = Math.floor(safeTotal / 3600);
+  const minutes = Math.floor((safeTotal % 3600) / 60);
+  const seconds = safeTotal % 60;
 
   if (hours > 0) {
     return `${hours}h ${minutes}m ${seconds}s`;
