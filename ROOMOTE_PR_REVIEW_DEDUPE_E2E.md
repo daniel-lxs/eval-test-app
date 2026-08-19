@@ -1,0 +1,4 @@
+# PR review deduplication E2E fixture
+
+This temporary file exists only to exercise Roomote's pull-request review
+webhook handling against a disposable test repository.
