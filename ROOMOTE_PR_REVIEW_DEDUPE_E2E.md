@@ -11,3 +11,4 @@ Local Docker active-review attempt.
 Active burst revision 1.
 Active burst revision 2.
 Active burst revision 3.
+Completion-during-debounce revision.
